@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2467c4f0-dc9a-44c6-8584-b06f0ee1a0f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/info/devlink/developerservice/DeveloperServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/info/devlink/developerservice/DeveloperServiceApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/developer-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/info.devlink.developerservice.DeveloperServiceApplicationTests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/info.devlink.developerservice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-info.devlink.developerservice.DeveloperServiceApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +46,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -107,6 +85,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Containers" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -124,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582059532393</updated>
-      <workItem from="1582059536542" duration="1378000" />
+      <workItem from="1582059536542" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="update git url">
       <created>1582060449211</created>
@@ -133,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582060449211</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1582061857903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582061857903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,17 +131,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update git url" />
-    <option name="LAST_COMMIT_MESSAGE" value="update git url" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="90" key="#Dockerfile" timestamp="1582061329460">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="535" y="90" key="#Dockerfile/0.0.1680.1050@0.0.1680.1050" timestamp="1582061329460" />
-    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582060449047">
+    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582061857541">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582060449047" />
+    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582061857541" />
     <state x="681" y="425" key="Github.ShareDialog" timestamp="1582059568179">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -160,14 +151,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="544" y="238" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582059571724" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1582059555000">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1582062650570">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582059555000" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582060451996">
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582062650570" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582061860172">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582060451996" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582061860172" />
     <state x="498" y="282" width="837" height="550" key="find.popup" timestamp="1582061808000">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
