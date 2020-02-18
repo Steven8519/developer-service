@@ -1,7 +1,7 @@
 node{
 
     stage('SCM Checkout'){
-        git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Steven8519/test.git', branch: 'master'
+        git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Steven8519/developer-service.git', branch: 'master'
     }
 
     stage("Gradle build"){
