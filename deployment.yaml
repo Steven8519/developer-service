@@ -2,20 +2,20 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    name: springboot
+    name: devlink
   name: spring-controller
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: springboot
+        name: devlink
     spec:
       containers:
         - image: steven8519/developer-service
-          name: springboot
+          name: devlink
           ports:
-            - name: springboot
+            - name: devlink
               containerPort: 8080
 ---
 # Node Port Service
@@ -23,15 +23,15 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: springboot
-  name: springboot
+    name: devlink
+  name: devlink
 spec:
   type: NodePort
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    name: springboot
+    name: devlink
 ---
 # Mongo host path rc
 apiVersion: v1
