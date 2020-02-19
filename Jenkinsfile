@@ -26,9 +26,4 @@ node {
     stage("Deploy app"){
        sh "kubectl apply -f deployment.yaml"
     }
-
-    stage("Deploy app"){
-        sh "kubectl apply -f istio-deployment.yaml"
-    }
-
 }
