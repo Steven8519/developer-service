@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2467c4f0-dc9a-44c6-8584-b06f0ee1a0f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/info/devlink/developerservice/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/info/devlink/developerservice/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/devlink/developerservice/controller/DeveloperController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/devlink/developerservice/controller/DeveloperController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/developer-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/developer-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +80,7 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Spring Boot.DeveloperServiceApplication">
     <configuration name="DeveloperServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="developer-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="info.devlink.developerservice.DeveloperServiceApplication" />
@@ -94,11 +113,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Containers" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -117,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582059532393</updated>
       <workItem from="1582059536542" duration="2077000" />
-      <workItem from="1582062991296" duration="9360000" />
+      <workItem from="1582062991296" duration="11638000" />
     </task>
     <task id="LOCAL-00001" summary="update git url">
       <created>1582060449211</created>
@@ -210,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582086297863</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="istio test 2">
+      <created>1582088211947</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582088211947</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,17 +248,18 @@
     <MESSAGE value="test 3" />
     <MESSAGE value="test 4" />
     <MESSAGE value="istio test" />
-    <option name="LAST_COMMIT_MESSAGE" value="istio test" />
+    <MESSAGE value="istio test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="istio test 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="90" key="#Dockerfile" timestamp="1582061329460">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="535" y="90" key="#Dockerfile/0.0.1680.1050@0.0.1680.1050" timestamp="1582061329460" />
-    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582086297672">
+    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582088211778">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582086297672" />
+    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582088211778" />
     <state x="681" y="425" key="Github.ShareDialog" timestamp="1582059568179">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -246,46 +268,46 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="544" y="238" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582059571724" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1582066515612">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1582092572165">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515612" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1582066515611">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572165" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1582092572163">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515611" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1582066515610">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572163" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1582092572162">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515610" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1582066515612">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572162" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1582092572164">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515612" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1582066515615">
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572164" />
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1582092572167">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515615" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1582066515614">
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572167" />
+    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1582092572166">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515614" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1582066515613">
+    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572166" />
+    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1582092572165">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515613" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1582066515614">
+    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572165" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1582092572166">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582066515614" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582092572166" />
     <state x="341" y="164" key="SettingsEditor" timestamp="1582062650570">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582062650570" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582086299343">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582088213406">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582086299343" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582088213406" />
     <state x="498" y="282" width="837" height="550" key="find.popup" timestamp="1582063219099">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

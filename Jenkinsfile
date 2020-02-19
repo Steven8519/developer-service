@@ -1,5 +1,4 @@
-node{
-
+node {
     stage('SCM Checkout'){
         git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Steven8519/developer-service.git', branch: 'master'
     }
@@ -8,7 +7,6 @@ node{
       sh "./gradlew clean build"
 
     }
-
 
     stage('Build Docker Image'){
         sh 'docker build -t steven8519/developer-service .'
@@ -19,30 +17,18 @@ node{
           sh "docker login -u steven8519 -p ${Docker_Hub_ID}"
         }
         sh 'docker push steven8519/developer-service'
-     }
-
-     stage("Deploy MongoDB"){
-      kubernetesDeploy(
-         kubeconfigId: 'kubeconfig',
-         configs: 'mongodb.yaml',
-         enableConfigSubstitution: true
-      )
     }
 
-      stage("Deploy app"){
-        kubernetesDeploy(
-            kubeconfigId: 'kubeconfig',
-            configs: 'deployment.yaml',
-            enableConfigSubstitution: true
-        )
-      }
+    stage("Deploy MongoDB"){
+       sh "kubectl apply -f mongodb.yaml"
+    }
 
-      stage("Deploy app"){
-              kubernetesDeploy(
-                  kubeconfigId: 'kubeconfig',
-                  configs: 'istio-gateway.yaml',
-                  enableConfigSubstitution: true
-              )
-            }
+    stage("Deploy app"){
+       sh "kubectl apply -f deployment.yaml"
+    }
+
+    stage("Deploy app"){
+        sh "kubectl apply -f istio-deployment.yaml"
+    }
 
 }
