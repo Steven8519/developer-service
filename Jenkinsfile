@@ -37,4 +37,12 @@ node{
         )
       }
 
+      stage("Deploy app"){
+              kubernetesDeploy(
+                  kubeconfigId: 'kubeconfig',
+                  configs: 'istio-gateway.yaml',
+                  enableConfigSubstitution: true
+              )
+            }
+
 }
