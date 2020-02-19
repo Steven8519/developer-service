@@ -1,78 +1,75 @@
 apiVersion: v1
-kind: ReplicationController
-metadata:
-  labels:
-    name: devlink
-  name: spring-controller
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        name: devlink
-    spec:
-      containers:
-        - image: steven8519/developer-service
-          name: devlink
-          ports:
-            - name: devlink
-              containerPort: 8080
----
-# Node Port Service
-apiVersion: v1
 kind: Service
 metadata:
+  name: developer-service
   labels:
-    name: devlink
-  name: devlink
+    app: developer-service
 spec:
-  type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - name: http
+      port: 8000
   selector:
-    name: devlink
+    app: developer-service
 ---
-# Mongo host path rc
-apiVersion: v1
-kind: ReplicationController
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  labels:
-    name: mongo
-  name: mongo-controller
+  name: developer-service
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: mongo
+        app: developer-service
+        version: v1
     spec:
       containers:
-        - image: mongo
-          name: mongo
+        - name: kayak-app
+          image: steven8519/developer-service
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MONGODB_HOST
+              value: mongodb
           ports:
-            - name: mongo
-              containerPort: 27017
-              hostPort: 27017
-          volumeMounts:
-            - name: mongo-persistent-storage
-              mountPath: /data/db
-      volumes:
-        - name: mongo-persistent-storage
-          hostPath:
-            path: /tmp/dbbackup
+            - containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
 ---
-# Mongo Node Port RC
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  labels:
+    appdb: mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      appdb: mongodb
+  template:
+    metadata:
+      labels:
+        appdb: mongodb
+    spec:
+      containers:
+        - name: mongodb
+          image: mongo:3.6.6
+          ports:
+            - containerPort: 27017
+---
 apiVersion: v1
 kind: Service
 metadata:
+  name: mongodb
   labels:
-    name: mongo
-  name: mongo
+    app: mongodb
 spec:
-  type: ClusterIP
   ports:
     - port: 27017
-      targetPort: 27017
+      protocol: TCP
   selector:
-    name: mongo
+    appdb: mongodb

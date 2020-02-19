@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2467c4f0-dc9a-44c6-8584-b06f0ee1a0f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/istio-gateway.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/devlink/developerservice/controller/DeveloperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/devlink/developerservice/controller/DeveloperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582059532393</updated>
       <workItem from="1582059536542" duration="2077000" />
-      <workItem from="1582062991296" duration="4485000" />
+      <workItem from="1582062991296" duration="5229000" />
     </task>
     <task id="LOCAL-00001" summary="update git url">
       <created>1582060449211</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582067108549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="kubernetes istio test">
+      <created>1582074097573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582074097573</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,17 +175,18 @@
     <MESSAGE value="update" />
     <MESSAGE value="kubernetes test" />
     <MESSAGE value="kubernetes test1" />
-    <option name="LAST_COMMIT_MESSAGE" value="kubernetes test1" />
+    <MESSAGE value="kubernetes istio test" />
+    <option name="LAST_COMMIT_MESSAGE" value="kubernetes istio test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="90" key="#Dockerfile" timestamp="1582061329460">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="535" y="90" key="#Dockerfile/0.0.1680.1050@0.0.1680.1050" timestamp="1582061329460" />
-    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582067107809">
+    <state x="418" y="127" key="CommitChangelistDialog2" timestamp="1582074097367">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582067107809" />
+    <state x="418" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582074097367" />
     <state x="681" y="425" key="Github.ShareDialog" timestamp="1582059568179">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -222,10 +231,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582062650570" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582067110176">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582074098793">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582067110176" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582074098793" />
     <state x="498" y="282" width="837" height="550" key="find.popup" timestamp="1582063219099">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
