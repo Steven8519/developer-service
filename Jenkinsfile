@@ -21,20 +21,20 @@ node{
         sh 'docker push steven8519/developer-service'
      }
 
-      stage("Deploy To Kuberates Cluster"){
+     stage("Deploy MongoDB"){
+      kubernetesDeploy(
+         kubeconfigId: 'kubeconfig',
+         configs: 'mongodb.yaml',
+         enableConfigSubstitution: true
+      )
+    }
+
+      stage("Deploy app"){
         kubernetesDeploy(
             kubeconfigId: 'kubeconfig',
             configs: 'deployment.yaml',
             enableConfigSubstitution: true
         )
       }
-
-      stage("Deploy To Kuberates Cluster"){
-       kubernetesDeploy(
-          kubeconfigId: 'kubeconfig',
-          configs: 'istio-gateway.yaml',
-          enableConfigSubstitution: true
-       )
-    }
 
 }

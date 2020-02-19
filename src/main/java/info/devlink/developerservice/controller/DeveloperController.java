@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping(value = "/developers")
+@RequestMapping(path = "/developers")
 public class DeveloperController {
 
     private final DeveloperRepository developerRepository;
