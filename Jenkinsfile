@@ -29,4 +29,12 @@ node{
         )
       }
 
+      stage("Deploy To Kuberates Cluster"){
+       kubernetesDeploy(
+          kubeconfigId: 'kubeconfig',
+          configs: 'istio-gateway.yaml',
+          enableConfigSubstitution: true
+       )
+    }
+
 }
