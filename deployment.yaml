@@ -24,9 +24,8 @@ spec:
         version: v1
     spec:
       containers:
-        - name: kayak-app
+        - name: developer-app
           image: steven8519/developer-service
-          imagePullPolicy: IfNotPresent
           env:
             - name: MONGODB_HOST
               value: mongodb
