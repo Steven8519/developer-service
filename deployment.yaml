@@ -29,7 +29,7 @@ metadata:
 spec:  
   ports:  
     - name: http  
-      port: 8000  
+      port: 8080  
   selector:  
     app: kayak-service
     name: springboot
