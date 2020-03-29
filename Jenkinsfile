@@ -20,10 +20,18 @@ node {
     }
 
     stage("Deploy MongoDB"){
-       sh "kubectl apply -f mongodb.yaml"
+       kubernetesDeploy(
+         configs: 'mongodb.yaml', 
+         kubeconfigId: 'KUBERNATES_CONFIG',
+         enableConfigSubstitution: true
+        )
     }
 
     stage("Deploy app"){
-       sh "kubectl apply -f deployment.yaml"
+       kubernetesDeploy(
+         configs: 'deployment.yaml', 
+         kubeconfigId: 'KUBERNATES_CONFIG',
+         enableConfigSubstitution: true
+        )
     }
 }
