@@ -26,7 +26,7 @@ spec:
       containers:
         - name: developer-app
           image: steven8519/developer-service
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           env:
             - name: MONGODB_HOST
               value: mongodb
