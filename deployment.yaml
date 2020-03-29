@@ -12,7 +12,7 @@ spec:
     app: developer-service
 ---
 apiVersion: extensions/v1beta1
-kind: ReplicationController
+kind: Deployment
 metadata:
   name: developer-service
 spec:
