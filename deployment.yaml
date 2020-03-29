@@ -13,10 +13,18 @@ spec:
     spec:
       containers:
       - image: steven8519/developer-service
-        name: springboot
-        ports:
-        - name: springboot
-          containerPort: 8080      
+        imagePullPolicy: IfNotPresent  
+        env:  
+          - name: MONGODB_HOST  
+            value: mongo 
+        ports:  
+          - containerPort: 8080  
+        livenessProbe:  
+          httpGet:  
+            path: /  
+            port: 8080  
+          initialDelaySeconds: 5  
+          periodSeconds: 5  
 ---
 # Node Port Service
 apiVersion: v1
@@ -25,13 +33,12 @@ metadata:
   labels:
     name: springboot
   name: springboot
-spec:
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 8080
-  selector:
-    name: springboot
+spec:  
+  ports:  
+    - name: http  
+      port: 8080  
+  selector:  
+    app: springboot 
 ---
 # Mongo host path rc
 apiVersion: v1
