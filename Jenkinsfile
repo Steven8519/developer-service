@@ -19,14 +19,6 @@ node {
         sh 'docker push steven8519/developer-service'
     }
 
-    stage("Deploy MongoDB"){
-       kubernetesDeploy(
-         configs: 'mongodb.yaml', 
-         kubeconfigId: 'KUBERNATES_CONFIG',
-         enableConfigSubstitution: true
-        )
-    }
-
     stage("Deploy app"){
        kubernetesDeploy(
          configs: 'deployment.yaml', 
